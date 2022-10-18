@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JPortfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="j icon" type="image/png" href="img/letter-j.png">
+    <script src="https://kit.fontawesome.com/129382f6fa.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <a href="#">
+                <img src="img/letter-j.png" alt="" style="width: 3em">
+            </a>
+        </div>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Interests</a></li>
+            <li><a href="#portfolio">Work</a></li>
+        </ul>
+    </header>
+
+    <!-- Home: Animations and Images -->
+    <section>
+        <a href="#home" id="btn">Welcome</a>
+        <img src="img/robot.png" id="robot" alt="">
+        <img src="img/platform.png" id="platform">
+    </section>
+
+    <!-- First page footer-->
+    <ul class="footer">
+        <li><a href="https://www.linkedin.com/in/josue-ayala-ocegueda-30b408189/"><img src="img/linkedin.png" alt=""></a></li>
+        <li><a href="https://github.com/"><img src="img/github.png" alt=""></a></li>
+        <li><a href="https://www.youtube.com/"><img src="img/youtube.png" alt=""></a></li>
+    </ul>
+ 
+
+    <!-- Background scrolling Parallax -->
+    <div class="parallax"></div>
+
+    <!-- Introduction -->
+    <section class="intro" id="home">
+
+        <video src="img/natureNight.mp4" muted loop autoplay playsinline ></video>
+        
+        <div class="overlay"></div>
+
+        <div class="text">
+            <h2>你好!,</h2>
+            <h3>It's Jay</h3>
+            <h3>_ _ _ _ _</h3>
+            <p>What's good...</p>
+            <a href="#about">Explore More?</a>
+        </div>
+    </section>
+
+    <div class="parallax"></div>
+
+    <!--About the Author -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">  
+                    <img src="img/intro-img2.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">Who's Jay?</h1>
+                    <p> AREA UNDER CONSTRUCTION Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit deserunt itaque iusto aut 
+                        laborum voluptas iure ut cupiditate ea debitis, placeat commodi maxime! Nobis exercitationem 
+                        distinctio ullam ipsam iure facere!</p>
+                
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')"> Skills </p>
+                        <p class="tab-links" onclick="opentab('experience')"> Experience </p>
+                        <p class="tab-links" onclick="opentab('education')"> Education </p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>DataSci/ML/DL</span><br>Analyzing data and predicting results using statistical measures.</li>
+                            <li><span>Web Dev</span><br>Creating webistes using Html, CSS, & Javascipt.</li>
+                            <li><span>3D Modeling</span><br>Creating objects using blender and importing them to the web.</li>
+                            <li><span>Micro-controllers</span><br>Test tinyML using the Arduino Nano Sense BLE.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022 - Current </span><br> Data Scientist (Mental Health) </li>
+                            <li><span>2020 - 2022 </span><br> Logistics Analyst (County Operations)</li>
+                            <li><span>2018 - 2020</span><br> UCSD Data Research </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2016-2020</span><br>UCSD: BS Cognitive Science: Machine Learning & Neural Computations. Minor in Economics. </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- What I Like to do, my interests -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title2">Interests & Hobbies (CONSTRUCTION)</h1>
+            <div  class="services-list">
+                
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Data Science</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui earum numquam aliquid?
+                     Dicta quod iste velit officia? Corporis velit inventore consequatur, praesentium saepe 
+                     aspernatur ad modi exercitationem delectus hic ab.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-microchip"></i>
+                    <h2>Machine Learning</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui earum numquam aliquid? 
+                        Dicta quod iste velit officia? Corporis velit inventore consequatur, praesentium 
+                        saepe aspernatur ad modi exercitationem delectus hic ab.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Dev</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing el iste velit officia? 
+                        Corporis velit inventore consequatur, praesentium saepe aspernatur ad modi
+                         exercitationem delectus hic ab.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-sharp fa-solid fa-cube"></i>
+                    <h2>3D Modeling</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui earum numquam aliquid?
+                         Dicta quod iste velit officia? Corporis velit inventore consequatur, praesentium saepe 
+                         aspernatur ad modi exercitationem delectus hic ab.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-arrow-trend-up"></i>
+                    <h2>Stock Options</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui earum numquam aliquid?
+                         Dicta quod iste velit officia? Corporis velit inventore consequatur, praesentium 
+                         saepe aspernatur ad modi exercitationem delectus hic ab.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-football"></i>
+                    <i class="fa-solid fa-futbol"></i>
+                    <i class="fa-solid fa-baseball"></i>
+                    <h2>Sports</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui earum numquam aliquid? 
+                        Dicta quod iste velit officia? Corporis velit inventore consequatur, praesentium saepe
+                         aspernatur ad modi exercitationem delectus hic ab.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+            <div class="text2">
+                <a href="#portfolio">Projects ▽ </a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="parallax"></div>
+
+    <!-- Portfolio Projects -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title2">Recent Projects</h1>
+            <div class = "work-list">
+                <div class="work">
+                    <img src="img/workML.jpg" alt="">
+                    <div class="layer">
+                        <h3>Machine Learning</h3>
+                        <p>Breast Cancer prediction using Ensemble learning, the method   
+                            of comparing different ML models to achieve high accuracy.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/workECOM.jpg" alt="">
+                    <div class="layer">
+                        <h3>E-Commerce Data Analysis</h3>
+                        <p>Merge multiple excel files with online retail data. Produce a report 
+                            that will help the company understand their market sales.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/workArdu.jpg" alt="">
+                    <div class="layer">
+                        <h3>Arduino Nano Sense BLE</h3>
+                        <p>Use Arduino software and tinyML (tensorflow) programming and apply them 
+                            into the real world using a small advanced microcontroller (with camera).
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- Javascript for About section-->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+</body>
+</html>
