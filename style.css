@@ -5,7 +5,7 @@
     font-family: 'Poppins', monospace;
     scroll-behavior: smooth;
 }
- 
+
 
 /* -------------------Full body html -----------------------*/
 body, html {
@@ -57,6 +57,13 @@ header ul li a.active  {
     color: #000000;
 }
 
+@media only screen and (max-width: 600px) {
+
+
+    header ul{
+        display: none;
+    }
+}
 /* -------------Header section (robot animation)-------------- */
 section {
     position: relative;
@@ -115,6 +122,14 @@ section  img#robot{
     transform: scale(1) translateY(-20px);
 }
 
+@media only screen and (max-width: 600px) {
+
+
+    #btn{
+        display: none;
+    }
+}
+
 /* ---------Paralax effect (many in html document) ---------------*/
 .parallax {
     /* The image used */
@@ -130,6 +145,17 @@ section  img#robot{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .parallax{
+        background-image: url('img/kali.jpg');
+        height: 80%;
+        background-size: cover;
+        background-position: center;
+    }
+
 }
 
 /* ------------------------- Intro --------------------------------*/
@@ -203,6 +229,18 @@ section  img#robot{
 .text a:hover
 {
   letter-spacing: 6px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .text h2{
+        font-size: 2em;
+    }
+
+    .text h3{
+        font-size: 1.5em;
+    }
+
 }
 
 /*-----------------About the Author----------------------------------*/
@@ -282,12 +320,62 @@ section  img#robot{
 
 .tab-contents{
     display: none;
+    margin:0px auto;
 }
 
 .tab-contents.active-tab{
     display: block;
 }
 
+@media only screen and (max-width: 800px){
+    
+    #about{
+        height: 200%;
+        padding: 40px 40px;   
+    }
+    
+    .about-col-1 img{
+        height: auto; 
+        width: auto; 
+        max-width: 300px; 
+        max-height: 300px; 
+    }
+ 
+    .sub-title{
+        font-size: 1.5em;  
+        line-height: 3em;
+        text-transform:capitalize;
+    }
+
+    .about-col-2 p{
+        font-size: 15px;
+        height: auto; 
+        width: auto; 
+        max-width: 230px; 
+        max-height: 300px;
+    }
+
+     
+
+    .tab-titles{
+        display: flex;
+        margin-top: 120px;
+    }
+
+    .tab-links{
+        margin-right: 30px;
+        margin-left: -20px;
+        font-size: 10px;
+        cursor: pointer; 
+    }
+
+    .tab-contents ul li{
+        list-style: none;
+        margin: 0 10px 0 -20px;
+    }
+
+
+}
 
 --------------Interests/Services -------------------------*/
 #services{
@@ -462,6 +550,19 @@ section  img#robot{
 .btn:hover{
     background: #FD3617;
 }
+
+@media only screen and (max-width: 800px){
+
+    #portfolio{
+        margin: 0px 0px 0 20px; 
+    }
+
+    .work{
+        margin-left: -20px;
+        transform: scale(0.9);
+    }
+ 
+}
 /* -------------------------Footer: Socials -----------------------------------*/
 .footer {
     position: absolute;
@@ -487,25 +588,4 @@ section  img#robot{
 
 .footer li a:hover {
   transform: scale(1) translateY(-20px);
-}
-
-/*--------------------- CSS for small screen ----------------*/
-@media only screen and (max-width: 800px){
-    
-    #about{
-        padding: 80px;
-        color: #fff;
-        height: 140%;
-    }
-    
-    
-    #about img{
-            min-width: 400px;
-            padding-bottom: 20px;
-            border-radius: 60px;
-            position: relative;
-            z-index: 2;
-            height: 100%;
-            
-        }
 }
