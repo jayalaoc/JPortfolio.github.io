@@ -59,7 +59,6 @@ header ul li a.active  {
 
 @media only screen and (max-width: 600px) {
 
-
     header ul{
         display: none;
     }
@@ -128,9 +127,15 @@ section  img#robot{
     #btn{
         display: none;
     }
+
+    section img{
+        width: auto;
+        max-width: 350px;
+    }
 }
 
 /* ---------Paralax effect (many in html document) ---------------*/
+
 .parallax {
     /* The image used */
     background-image: url('img/kali.jpg');
@@ -148,14 +153,12 @@ section  img#robot{
 }
 
 @media only screen and (max-width: 600px) {
-
     .parallax{
-        background-image: url('img/kali.jpg');
-        height: 80%;
+        height: 815px;
         background-size: cover;
-        background-position: center;
+        background-attachment:scroll;
     }
-
+ 
 }
 
 /* ------------------------- Intro --------------------------------*/
@@ -327,22 +330,23 @@ section  img#robot{
     display: block;
 }
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 600px){
     
     #about{
-        height: 200%;
+        height: 250%;
         padding: 40px 40px;   
+        width: auto; 
     }
     
     .about-col-1 img{
         height: auto; 
         width: auto; 
-        max-width: 300px; 
-        max-height: 300px; 
+        max-width: 400px; 
+        max-height: 400px; 
     }
  
     .sub-title{
-        font-size: 1.5em;  
+        font-size: 2em;  
         line-height: 3em;
         text-transform:capitalize;
     }
@@ -351,8 +355,10 @@ section  img#robot{
         font-size: 15px;
         height: auto; 
         width: auto; 
-        max-width: 230px; 
-        max-height: 300px;
+        max-width: 300px; 
+        max-height: 500px;
+        font-size: 1em;
+        line-height: 1.5em;
     }
 
      
@@ -364,7 +370,7 @@ section  img#robot{
 
     .tab-links{
         margin-right: 30px;
-        margin-left: -20px;
+        margin-left: -5px; 
         font-size: 10px;
         cursor: pointer; 
     }
@@ -372,6 +378,7 @@ section  img#robot{
     .tab-contents ul li{
         list-style: none;
         margin: 0 10px 0 -20px;
+        line-height: 1.5em;
     }
 
 
@@ -551,7 +558,7 @@ section  img#robot{
     background: #FD3617;
 }
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 600px){
 
     #portfolio{
         margin: 0px 0px 0 20px; 
