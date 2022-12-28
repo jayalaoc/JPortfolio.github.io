@@ -203,11 +203,11 @@ section  img#robot{
 
 .parallax {
     /* The image used */
-    background-image: url('img/kali.jpg');
+    background-image: url('img/forrestBACK.jpg');
     /* Full height */
     height: 100%;
-    /* Invert image color*/
-    filter: invert(1);
+    /* Invert image color  filter: invert(1); */
+     
 
 
     /* Create the parallax scrolling effect */
@@ -236,6 +236,7 @@ section  img#robot{
   height: 100%;
   object-fit: cover;
   opacity: 0.8; 
+  filter: invert(.1);
 }
 
 .overlay
