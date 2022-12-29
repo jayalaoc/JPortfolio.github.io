@@ -15,34 +15,6 @@
     font-family: 'Consolas', monospace;
 }
 
-:root {
-    --ff-primary: 'Source Code Pro', monospace;
-
-    --ff-reg: 300;
-    --fw-bold: 900;
-
-    --clr-light: #fff;
-    --clr-dark: #000000;
-    --clr-accent: #16e0bd;
-
-    --fs-h1: 3rem;
-    --fs-h2: 2.25rem;
-    --fs-h3: 1.25rem;
-    --fs-body: 1rem;
-
-    --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
-          0.125em 0.125em 0.25em rgba(0,0,0,.15);
-}
-
-@media (min-width: 800px) {
-    :root {
-        --fs-h1: 4.5rem;
-        --fs-h2: 3.75rem;
-        --fs-h3: 1.5rem;
-        --fs-body: 1.125rem;
-    }
-}
-
 
 /*Typography*/
 h1,
@@ -51,16 +23,11 @@ h3 {
     line-height: 1;
     margin:0;
 }
-
-h1 { font-size: var(--fs-h1) }
-h2 { font-size: var(--fs-h2) }
-h3 { font-size: var(--fs-h3) }
-
-
+ 
 /* -------------------Full body html -----------------------*/
 body, html{
     height: 100%;
-    background: var(--clr-dark); 
+    background: #000000; 
     margin: 0;
     line-height: 1.6;
 }
@@ -71,7 +38,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 30 px 100px;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -92,8 +59,8 @@ header ul {
 
 header ul li {
     list-style: none;
-    margin-left: 40px;
-    margin-top: 20px;
+    margin-left: 72px;
+    margin-top: 12px;
 }
 
 header ul li a {
@@ -111,12 +78,14 @@ header ul li a.active  {
 
 
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1030px) {
     header ul{
         display: none; 
         width: 50%
     }
 }
+
+
 /* -------------Header section (robot animation)-------------- */
 section {
     position: relative;
@@ -131,19 +100,19 @@ section {
 section img {
     position: absolute;
     padding: 1em;
-    pointer-events: none;
+    pointer-events: none;  
 }
 
 
 section img#platform{
     mix-blend-mode: screen;
-    filter: invert(1)
+    filter: invert(1); 
 }
 
 section  img#robot{
     z-index: 11;
-    animation: float 4s ease-out infinite;
-    filter: invert(1)
+    animation: float 6s ease-out infinite;
+    filter: invert(1); 
 
 }
 
@@ -156,47 +125,42 @@ section  img#robot{
 
 #btn {
     text-decoration: none;
-    position: relative;
-    top: -200px; 
-    left: -200px;
+    position: relative; 
+    left: -128px;
 
-    padding: 8px 30px;
+    padding: 16px 30px;
     border-radius: 80px;
     background: #ED3D14;
     color: #000000;
     font-size: 1.6em;
     z-index: 11;
 
-    transform: scale(1);
+    transform: scale(0.7);
     transition: 0.5s;
+    display: flex;
+
+    top: 0.5px;
 }
 
 #btn:hover {
     transform: scale(1) translateY(-20px);
 }
 
-@media only screen and (max-width: 800px) {
+ 
 
 
-    #btn{  
-        display: inline-block;
-        margin-left: 300%;
-        background: #ED3D14;
-    }
-
-    section img{
-        width: auto;
-        max-width: 350px;
-    }
-}
-
-@media only screen and (min-width: 801px) and (max-width: 1500px) {
+@media only screen and (max-width: 860px) {
 
     #btn{
-        display: flex;
+        display: none;
         top: 0.5px; 
-        transform: scale(0.8);
+        transform: scale(1);  
     }
+
+      
+
+    
+
 }
 
 /* ---------Paralax effect (many in html document) ---------------*/
@@ -217,9 +181,10 @@ section  img#robot{
     background-size: cover;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 860px) {
     .parallax{
         background-attachment: scroll;
+        display: none;
     }
  
 }
@@ -347,7 +312,7 @@ section  img#robot{
 
 .about-col-2 {
     flex-basis: 65%;
-}
+} 
 
 .sub-title{
     font-size: 2em;
@@ -413,80 +378,11 @@ section  img#robot{
     display: block;
 }
 
-@media only screen and (max-width: 800px){
-    
+
+@media only screen and (max-width: 1030px){
     #about{
+        height: 100%; 
         display: none;
-        height: 250%;
-        padding: 40px 70px;   
-        width: auto; 
-    }
-    
-    .about-col-1 img{
-        height: auto; 
-        width: auto; 
-        max-width: 400px; 
-        max-height: 400px; 
-    }
- 
-    .sub-title{
-        font-size: 2em;  
-        line-height: 3em;
-        text-transform:capitalize;
-    }
-
-    .about-col-2 p{
-        font-size: 15px;
-        height: auto; 
-        width: auto; 
-        max-width: 300px; 
-        max-height: 500px;
-        font-size: 1em;
-        line-height: 1.5em;
-    }
-
-     
-
-    .tab-titles{
-        display: flex;
-        margin-top: 120px;
-        max-width: 500px;
-    }
-
-    .tab-titles a{
-        display: inline-block;
-        text-decoration: none;
-        background: white;
-        color: black;
-        padding: 10px;
-        transition: 0.1s;
-    }
-
-    .tab-links{
-        margin-right: 30px;
-        margin-left: -20px; 
-        font-size: 10px;
-        cursor: pointer; 
-    }
-
-    .tab-contents ul li{
-        list-style: none;
-        margin: 30px 0px 0px -50px;
-        line-height: 1.5em;
-        max-width: 400px;
-    }
-
-    .tab-links{
-        margin-right: 50px;
-        font-size: 18px; 
-    }
-
-}
-
-
-@media only screen and (min-width: 800px) and (max-width: 1200px) {
-    #about{
-        height: 200%; 
     }
 
     .sub-title{
@@ -570,6 +466,7 @@ section  img#robot{
     transform: translateY(-20px);
 }
 
+ 
 .text2 a{
     display: block;
     margin: 50px auto;
@@ -580,25 +477,34 @@ section  img#robot{
     text-decoration: none;
     color: white;
     transition: background 0.5s;  
+    
 }
 
 .text2 a:hover{
   background: #FD3617;
 }
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 860px){
 
     .sub-title2{
         text-align: center;
         font-size: 2.5em;
         margin-right: 40px;
+        margin-bottom: 10px;
     }
 
     .text2 a{
-        margin-left: 50px;
+        margin-left: 40px;
         margin-bottom: 20px; 
     } 
 
+}
+
+@media only screen and (max-height: 600px){
+    .text2 a{
+        margin-left: 44px;
+        margin-bottom: 20px; 
+    } 
 }
 
 /* ------------------Personal portfolio projects -----------------------*/
