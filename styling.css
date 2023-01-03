@@ -291,7 +291,7 @@ header {
     background-color: var(--clr-dark);
     background-image: url("img2/linux-img.jpg");
     background-size: cover;
-    background-blend-mode: multiply;
+    background-blend-mode: color-burn;
     color: var(--clr-light);
     text-align: center;
 }

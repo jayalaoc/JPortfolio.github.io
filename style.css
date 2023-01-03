@@ -32,6 +32,7 @@ body, html{
     line-height: 1.6;
 }
 
+
 /* --------------------Header------------------------------- */
 header {
     position: absolute;
@@ -59,8 +60,9 @@ header ul {
 
 header ul li {
     list-style: none;
-    margin-left: 72px;
+    margin-left: 30px;
     margin-top: 12px;
+    margin-right: 20px;
 }
 
 header ul li a {
@@ -243,7 +245,7 @@ section  img#robot{
   font-size: em;
   color: #fff;
   margin: 20px 0;
-  font-weight: 400;
+  font-weight: 400px;
   max-width: 700px;
 }
 .text a
@@ -290,9 +292,9 @@ section  img#robot{
 /*-----------------About the Author----------------------------------*/
 #about{
     padding: 80px;
-    color: #fff;
+    color: rgb(0, 0, 0);
     height: 100%;
-    background-color: #000000;
+    background-color: #dbd3ca;
 }
 
 .row{
@@ -312,21 +314,25 @@ section  img#robot{
 
 .about-col-2 {
     flex-basis: 65%;
+    background: whitesmoke;
+    padding: 17px 38px 14px 38px;
+    border-radius: 15px;
 } 
 
 .sub-title{
     font-size: 2em;
-    padding: 5px;
-    color: #FD3617;
+    padding: 5px; 
     line-height: 1em;
     text-transform: uppercase;
     margin-bottom: 1em;
+    display: flex;
 }
-
+ 
 .tab-titles{
     display: flex;
-    margin: 50px 0px 50px 0px;
+    margin: 15px 0px 10px 0px;
 }
+
 
 
 .tab-titles a:hover{
@@ -372,36 +378,62 @@ section  img#robot{
     margin:0px auto;
 }
 
-
+.tab-contents ul li a{
+    text-decoration: none;
+    color:rgb(226, 12, 12)
+}
 
 .tab-contents.active-tab{
     display: block;
 }
 
+@media only screen and (max-width: 1200px){
 
-@media only screen and (max-width: 1030px){
     #about{
-        height: 100%; 
-        display: none;
-    }
-
-    .sub-title{
-        font-size: 1.5em;  
-        line-height: 1em; 
-    }
-
-    .about-col-2 p{
-        font-size: 15px;
         height: auto; 
-        width: auto; 
-        max-width: 800px; 
-        font-size: 1em;
-        line-height: 1.5em;
     }
- 
+        .row{
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
+        }
+
+    .about-col-1{
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    
+    #about{
+        height: auto;  
+    }
+
+    .row{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap; 
+        align-items: flex-end;
+        width: 210px;
+    }
+
+
+   
+
+    .about-col-1{
+        transform: scale(1.5);
+        padding: none;
+    }
+
+    .about-col-2{
+        transform: scale(.9);
+        padding: 0px 25px 0px 20px;
+        margin-right: -9px;
+    }
+
     .tab-titles{
-        display: flex; ;
-        margin: 70px 0px 50px 0px; 
+        flex-direction: column;
+        margin-bottom: 40px; 
     }
 }
 
