@@ -292,9 +292,9 @@ section  img#robot{
 /*-----------------About the Author----------------------------------*/
 #about{
     padding: 80px;
-    color: rgb(0, 0, 0);
-    height: 100%;
+    color: rgb(0, 0, 0); 
     background-color: #dbd3ca;
+    height: auto;
 }
 
 .row{
@@ -397,13 +397,10 @@ section  img#robot{
             align-items: center;
             align-content: center;
         }
-
-    .about-col-1{
-        display: flex;
-    }
+ 
 }
 
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 640px){
     
     #about{
         height: auto;  
@@ -413,22 +410,8 @@ section  img#robot{
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap; 
-        align-items: flex-end;
+        align-items: center;
         width: 210px;
-    }
-
-
-   
-
-    .about-col-1{
-        transform: scale(1.5);
-        padding: none;
-    }
-
-    .about-col-2{
-        transform: scale(.9);
-        padding: 0px 25px 0px 20px;
-        margin-right: -9px;
     }
 
     .tab-titles{
